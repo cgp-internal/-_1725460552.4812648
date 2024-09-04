@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Message Converter</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Message Converter</h1>
+    <form id="convert_form">
+      <label for="message">Enter message:</label>
+      <input type="text" id="message" name="message"><br><br>
+      <label for="conversion_type">Select conversion type:</label>
+      <input type="radio" id="uppercase" name="conversion_type" value="uppercase">
+      <label for="uppercase">Uppercase</label>
+      <input type="radio" id="lowercase" name="conversion_type" value="lowercase">
+      <label for="lowercase">Lowercase</label><br><br>
+      <input type="submit" value="Convert">
+    </form>
+    <div id="result"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
